@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>My Portfolio</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+            <link rel="stylesheet" href="style.css" />
+             <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="AAA" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#journey">Journey</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="py-5" id="app">
+            <section id="jumbotron">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container text-center justify-content-center align-items-center">
+                        <h1 class="display-1">Shagan Sangha</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Having (soon) graduated from Marlboro High School, I am ready to officially begin my journey in Computer Science at Rutgers University, building my skills towards a career specializing in AI/Machine Learning.
+                                <br><br>
+                                During my free time, I like to crochet wearable apparel such as tank tops and handbags. I also like to bake desserts for my family and I. In addition, I make sure to consistently practice yoga in order to maintain my inner peace. 
+                                <br><br>
+                                I am the eldest sister of four younger siblings ages 9, 7, 5, and 2. Being the first to go to college out of my siblings, I am ready to go wherever my ambitions take me, carving a path for my siblings to take inspiration from. 
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="AAA">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="journey">
+                <div class="container">
+                    <div class="row">
+                        <h1>My Journey</h1>
+                    </div>
+                    <div class="row">
+                        <!--timeline-->
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <div class="container">
+                    <div class="row">
+                        <h1>My Skills</h1>
+                    </div>
+                    <div class="row">
+                        <!--skills content-->
+                    <div class="col-3 mx-3">
+                        <div class="col-3 mx-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="container">
+                    <div class="row">
+                        <h1>My Projects</h1>
+                    </div>
+                    <div class="row">
+                        <!--button Soph-Jnr-Snr-->
+                        <div class="col-md-6">
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-primary">Sophomore Year</button>
+                                <button type="button" class="btn btn-outline-primary">Junior Year</button>
+                                <button type="button" class="btn btn-outline-primary">Senior Year</button>
+                            </div>
+                        </div>
+                        
+                        <!--projects-->
+                        <div id="carouselExample" class="carousel slide bg-primary">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><!--add v-if to have .active only on slide 1-->
+                                    <div class="col-3 mx-3">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Special title treatment</h5>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container">
+                    <div class="row">
+                        <h1>Contact Me!</h1>
+                    </div>
+                    <div class="row">
+                        <!--contact content-->
+                        <div class="col-md-6">
+                            <p>Feel free to reach out to me!</p>
+                            <p>Email: example@example.com</p>
+                            <p>Phone: (123) 456-7890</p>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- formspree -->
+                        </div>
+                    </div>
+                </div>
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+             <section id="footer" class="bg-dark text-light text-center py-3">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <h3>Shagan Sangha</h3>
+                        <!-- 3 logos -->
+                         <div class="col-1">
+                            Logo1
+                         </div>
+                         <div class="col-1">
+                            Logo1
+                         </div>
+                         <div class="col-1">
+                            Logo1
+                         </div>
+                        <p>© 2026 Shagan Sangha. All rights reserved.</p>
+                    </div>
+                    
+                </div>
+        </footer>
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </body>
+</html>
