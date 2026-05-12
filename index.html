@@ -15,6 +15,9 @@
         />
             <link rel="stylesheet" href="style.css" />
              <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+             <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=La+Belle+Aurore&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -43,17 +46,16 @@
             </nav>
         </header>
         <main class="text-center" id="app">
-            <section id="jumbotron" class="my-5">
-                <div class="jumbotron jumbotron-fluid">
+            
+                <div class="jumbotron jumbotron-fluid my-5">
                     <div class="row h-100 d-flex justify-content-center align-items-center">
                         <h1 class="display-1">Shagan Sangha</h1>
                     </div>
                 </div>
-            </section>
 
             <section id="about" class="my-5">
-                <div class="container">
-                    <div class="row">
+                <div class="container py-5">
+                    <div class="row mb-3">
                         <h1>About Me</h1>
                     </div>
                     <div class="row">
@@ -73,8 +75,8 @@
             </section>
 
             <section id="journey" class="my-5">
-                <div class="container">
-                    <div class="row">
+                <div class="container py-5">
+                    <div class="row mb-3">
                         <h1>My Journey</h1>
                     </div>
                     <div class="row">
@@ -84,8 +86,8 @@
             </section>
 
             <section id="skills" class="my-5">
-                <div class="container">
-                    <div class="row">
+                <div class="container py-5">
+                    <div class="row mb-3">
                         <h1>My Skills</h1>
                     </div>
                     <div class="row">
@@ -102,7 +104,6 @@
                                         <!-- name of skill -->
                                          ...
                                     </p>
-                                    <a href="#" class="btn btn-primary">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -111,53 +112,56 @@
             </section>
 
             <section id="projects" class="my-5">
-                <div class="container">
-                    <div class="row">
+                <div class="container py-5">
+                    <div class="row mb-1">
                         <h1>My Projects</h1>
                     </div>
                     <div class="row justify-content-center">
                         <!--button Soph-Jnr-Snr-->
                         <div class="col-md-6 p-4">
                             <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                <button type="button" class="btn btn-outline-primary">Sophomore Year</button>
-                                <button type="button" class="btn btn-outline-primary">Junior Year</button>
-                                <button type="button" class="btn btn-outline-primary">Senior Year</button>
+                                <button type="button" class="btn btn-outline">Sophomore Year</button>
+                                <button type="button" class="btn btn-outline">Junior Year</button>
+                                <button type="button" class="btn btn-outline">Senior Year</button>
                             </div>
                         </div>
                         
                         <!--projects-->
-                        <div id="carouselExample" class="carousel slide bg-primary">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active"><!--add v-if to have .active only on slide 1-->
-                                    <div class="col-3 mx-3">
-                                        <div class="card" style="width: 18rem;">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    <!-- name of project -->
-                                                </h5>
-                                                <!-- add 'learn more' on first 3 projs per yr -->
-                                                <a href="#" class="btn btn-primary">Go somewhere</a> 
+                        <div class="col-12">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><!--add v-if to have .active only on slide 1-->
+                                        <div class="col-3 mx-3">
+                                            <div class="card" style="width: 18rem;">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">
+                                                        <!-- name of project -->
+                                                    </h5>
+                                                    <!-- add 'learn more' on first 3 projs per yr -->
+                                                    <a href="#" class="btn btn-outline learnMore">Learn More</a> 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
+                        
                     </div>
                 </div>
             </section>
 
             <section id="contact" class="my-5">
-                <div class="container">
-                    <div class="row">
+                <div class="container py-5">
+                    <div class="row mb-3">
                         <h1>Contact Me!</h1>
                     </div>
                     <div class="row">
@@ -176,7 +180,7 @@
         </main>
         <footer>
             <!-- place footer here -->
-             <section id="footer" class="bg-dark text-light text-center py-3">
+             <div id="footer" class="bg-dark text-light text-center py-3">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                         <h3>Shagan Sangha</h3>
@@ -192,8 +196,8 @@
                          </div>
                         <p>© 2026 Shagan Sangha. All rights reserved.</p>
                     </div>
-                    
                 </div>
+            </div>
         </footer>
         <!-- Bootstrap JavaScript Bundle (includes Popper) -->
          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

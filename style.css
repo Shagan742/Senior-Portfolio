@@ -6,6 +6,13 @@ html {
 body {
     background-color:#E0A7B4;
 }
+
+section {
+    /* border:2px solid white; */
+    /* background-color:rgba(255, 255, 255, 0.3); */
+    margin:2px;
+    bottom:700px;
+}
 /* navbar */
 .navbar {
     background-color:#8FB38F;
@@ -28,8 +35,21 @@ body {
 /* jumbotron */
 
 .jumbotron {
-     height:500px; 
-     border-bottom:2px solid black;
+    height:800px; 
+    border-bottom:2px solid black;
+    box-shadow: 0 8px 40px -6px black;
+    background-image: url(imgs/jumbotronImage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.display-1 {
+    font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
 }
 
 /* about */
@@ -40,6 +60,32 @@ body {
 /* skills */
 
 /* projects */
+
+.card {
+    background-color:rgba(255, 255, 255, 0.4);
+    border:2px solid black;
+}
+
+.btn-outline {
+    border:1px solid black;
+    color:black;
+    background-image:linear-gradient(60deg, #9cb99cc4, rgb(201, 230, 193), #9cb99cc4);
+}
+
+.btn-outline:hover {
+    border:1px solid black;
+    color:black;
+    background-image:linear-gradient(60deg, #9cb99cc4, rgb(201, 230, 193), #9cb99cc4);
+    color:white;
+    border:1px solid white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+}
+
 
 /* blog about projects */
 
