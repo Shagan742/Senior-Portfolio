@@ -20,7 +20,7 @@
     <body>
         <header>
             <!-- place navbar here -->
-             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="AAA" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -29,7 +29,7 @@
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div class="navbar-nav me-auto">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                         <a class="nav-link" href="#about">About</a>
                         <a class="nav-link" href="#journey">Journey</a>
@@ -37,20 +37,21 @@
                         <a class="nav-link" href="#projects">Projects</a>
                         <a class="nav-link" href="#contact">Contact</a>
                     </div>
+                        <a class="btn btn-outline-primary resume ms-auto" href="#" role="button">🡫 Resume</a>
                     </div>
                 </div>
             </nav>
         </header>
-        <main class="py-5" id="app">
-            <section id="jumbotron">
+        <main class="text-center" id="app">
+            <section id="jumbotron" class="my-5">
                 <div class="jumbotron jumbotron-fluid">
-                    <div class="container text-center justify-content-center align-items-center">
+                    <div class="row h-100 d-flex justify-content-center align-items-center">
                         <h1 class="display-1">Shagan Sangha</h1>
                     </div>
                 </div>
             </section>
 
-            <section id="about">
+            <section id="about" class="my-5">
                 <div class="container">
                     <div class="row">
                         <h1>About Me</h1>
@@ -71,7 +72,7 @@
                 </div>
             </section>
 
-            <section id="journey">
+            <section id="journey" class="my-5">
                 <div class="container">
                     <div class="row">
                         <h1>My Journey</h1>
@@ -82,7 +83,7 @@
                 </div>
             </section>
 
-            <section id="skills">
+            <section id="skills" class="my-5">
                 <div class="container">
                     <div class="row">
                         <h1>My Skills</h1>
@@ -93,9 +94,15 @@
                         <div class="col-3 mx-3">
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">
+                                        <!-- img with transparent png logos of each language/skill -->
+                                         ...
+                                    </h5>
+                                    <p class="card-text">
+                                        <!-- name of skill -->
+                                         ...
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -103,14 +110,14 @@
                 </div>
             </section>
 
-            <section id="projects">
+            <section id="projects" class="my-5">
                 <div class="container">
                     <div class="row">
                         <h1>My Projects</h1>
                     </div>
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <!--button Soph-Jnr-Snr-->
-                        <div class="col-md-6">
+                        <div class="col-md-6 p-4">
                             <div class="btn-group" role="group" aria-label="Basic outlined example">
                                 <button type="button" class="btn btn-outline-primary">Sophomore Year</button>
                                 <button type="button" class="btn btn-outline-primary">Junior Year</button>
@@ -125,9 +132,11 @@
                                     <div class="col-3 mx-3">
                                         <div class="card" style="width: 18rem;">
                                             <div class="card-body">
-                                                <h5 class="card-title">Special title treatment</h5>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                <h5 class="card-title">
+                                                    <!-- name of project -->
+                                                </h5>
+                                                <!-- add 'learn more' on first 3 projs per yr -->
+                                                <a href="#" class="btn btn-primary">Go somewhere</a> 
                                             </div>
                                         </div>
                                     </div>
@@ -146,7 +155,7 @@
                 </div>
             </section>
 
-            <section id="contact">
+            <section id="contact" class="my-5">
                 <div class="container">
                     <div class="row">
                         <h1>Contact Me!</h1>

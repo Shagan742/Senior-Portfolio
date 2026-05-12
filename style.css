@@ -1,0 +1,49 @@
+/* random */
+html {
+    overflow-x:hidden;
+}
+
+body {
+    background-color:#E0A7B4;
+}
+/* navbar */
+.navbar {
+    background-color:#8FB38F;
+}
+.resume {
+    border-radius:500px;
+    color:black;
+    background-color: #7A927A;
+    border:2px solid black;
+}
+
+.resume:hover {
+    border-radius:500px;
+    color:black;
+    background-color: #7A927A;
+    border:2px solid white;
+    color:white;
+}
+
+/* jumbotron */
+
+.jumbotron {
+     height:500px; 
+     border-bottom:2px solid black;
+}
+
+/* about */
+
+/* journey */
+
+
+/* skills */
+
+/* projects */
+
+/* blog about projects */
+
+/* contact */
+
+/* footer */
+
