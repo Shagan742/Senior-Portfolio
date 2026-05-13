@@ -1,10 +1,11 @@
-/* random */
+/* universal */
 html {
     overflow-x:hidden;
 }
 
 body {
     background-color:#E0A7B4;
+    color:black;
 }
 
 section {
@@ -13,6 +14,15 @@ section {
     margin:2px;
     bottom:700px;
 }
+
+p {
+    font-size:20px;
+}
+
+h1 {
+    font-size:50px;
+}
+
 /* navbar */
 .navbar {
     background-color:#8FB38F;
@@ -35,7 +45,7 @@ section {
 /* jumbotron */
 
 .jumbotron {
-    height:800px; 
+    height:600px; 
     border-bottom:2px solid black;
     box-shadow: 0 8px 40px -6px black;
     background-image: url(imgs/jumbotronImage.jpg);
@@ -45,14 +55,23 @@ section {
     background-attachment: fixed;
 }
 
+.row-jumbotron {
+    backdrop-filter: brightness(0.7) blur(1px);
+    filter:saturate(150%);
+}
+
 .display-1 {
     font-family: "La Belle Aurore", cursive;
   font-weight: 400;
   font-style: normal;
   color: white;
+  font-size:150px;
 }
 
 /* about */
+.abtImg {
+    border:2px solid black;
+}
 
 /* journey */
 
@@ -66,16 +85,30 @@ section {
     border:2px solid black;
 }
 
-.btn-outline {
+.learnMore {
     border:1px solid black;
     color:black;
     background-image:linear-gradient(60deg, #9cb99cc4, rgb(201, 230, 193), #9cb99cc4);
 }
 
-.btn-outline:hover {
+.learnMore:hover {
     border:1px solid black;
     color:black;
     background-image:linear-gradient(60deg, #9cb99cc4, rgb(201, 230, 193), #9cb99cc4);
+    color:white;
+    border:1px solid white;
+}
+
+.year {
+    border:1px solid black;
+    color:black;
+    background-color: white;
+}
+
+.year:hover {
+    border:1px solid black;
+    color:white;
+    background-color:black;
     color:white;
     border:1px solid white;
 }
@@ -92,4 +125,15 @@ section {
 /* contact */
 
 /* footer */
+h3 {
+    font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:40px;
+}
 
+#footer {
+    background-color:#8FB38F;
+    box-shadow:0px -50px 50px -6px #8FB38F;
+    padding:20px;
+}

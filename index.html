@@ -26,7 +26,7 @@
              <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="AAA" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        <img src="imgs/logo.png" alt="Logo" width="60" height="34" class="d-inline-block align-text-top">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@
         <main class="text-center" id="app">
             
                 <div class="jumbotron jumbotron-fluid my-5">
-                    <div class="row h-100 d-flex justify-content-center align-items-center">
+                    <div class="row row-jumbotron h-100 d-flex justify-content-center align-items-center">
                         <h1 class="display-1">Shagan Sangha</h1>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                             </p>
                         </div>
                         <div class="col-md-6">
-                            <img src="AAA">
+                            <img class="abtImg" src="AAA" width="450" height="450">
                         </div>
                     </div>
                 </div>
@@ -81,6 +81,10 @@
                     </div>
                     <div class="row">
                         <!--timeline-->
+                        <svg viewbox="0 0 1000 500"> <!--make little box the timeline resides in-->
+                            <line x1="50" y1="100" x2="950" y2="100" stroke="black" stroke-width="2"></line>
+                            <line x1="50" y1="300" x2="950" y2="300" stroke="black" stroke-width="2"></line>
+                        </svg>
                     </div>
                 </div>
             </section>
@@ -90,21 +94,19 @@
                     <div class="row mb-3">
                         <h1>My Skills</h1>
                     </div>
-                    <div class="row">
+                    <div class="row d-flex justify-content-center">
                         <!--skills content-->
-                    <div class="col-3 mx-3">
-                        <div class="col-3 mx-3">
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <!-- img with transparent png logos of each language/skill -->
-                                         ...
-                                    </h5>
-                                    <p class="card-text">
-                                        <!-- name of skill -->
-                                         ...
-                                    </p>
-                                </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <!-- img with transparent png logos of each language/skill -->
+                                    <img src="#">
+                                </h5>
+                                <p class="card-text">
+                                    <!-- name of skill -->
+                                    ...
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -120,9 +122,9 @@
                         <!--button Soph-Jnr-Snr-->
                         <div class="col-md-6 p-4">
                             <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                <button type="button" class="btn btn-outline">Sophomore Year</button>
-                                <button type="button" class="btn btn-outline">Junior Year</button>
-                                <button type="button" class="btn btn-outline">Senior Year</button>
+                                <button type="button" class="btn btn-outline year">Sophomore Year</button>
+                                <button type="button" class="btn btn-outline year">Junior Year</button>
+                                <button type="button" class="btn btn-outline year">Senior Year</button>
                             </div>
                         </div>
                         
@@ -180,7 +182,7 @@
         </main>
         <footer>
             <!-- place footer here -->
-             <div id="footer" class="bg-dark text-light text-center py-3">
+             <div id="footer" class="text-center py-3">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                         <h3>Shagan Sangha</h3>

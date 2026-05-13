@@ -1,8 +1,8 @@
 const vue_app = Vue.createApp({
     created() {
-        fetch('A.json').then(response => response.json()).then(json => {
-            this.A = json
-            console.log(this.A)
+        fetch('skills.json').then(response => response.json()).then(json => {
+            this.skills = json
+            console.log(this.skills)
         })
     },
     data() {//this is the data
