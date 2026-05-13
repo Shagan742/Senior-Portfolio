@@ -50,7 +50,7 @@ h1 {
     box-shadow: 0 8px 40px -6px black;
     background-image: url(imgs/jumbotronImage.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
