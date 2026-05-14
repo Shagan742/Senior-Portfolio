@@ -2,7 +2,7 @@ To make timeline:
 - components: timelineData.json, line(start: y1, end: y2), path, circle(cx cy), .card-over
 1. fill json file with some timelineData obj's DONE
 2. make a function that allows a max of 3 circles per line
--- a. computed function, make cx appear on a line n+(line length/3)px, starting at n = 950px
+-- a. computed function, make cx appear on a line n+(line length/3)px, starting at n = 50px
 -- b. for every 3 circles that've been reached, generate a new line w/ alternating path
 ---- i. computed function, add 200 to both y1 and y2 (new line)
 ---- ii. if index(current line) is even, right path is shown + add 200 to path's y-value.
