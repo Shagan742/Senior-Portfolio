@@ -90,9 +90,11 @@
                             <path v-show="index%2===1" d="M50 300 Q-100 410 50 500" stroke="black" stroke-width="2" fill="none"></path>
 
                             <!-- the dots are generated x pixels away from each other, and each line can have a maximum of 3-4 dots -->
-                            <circle cx="250" cy="100" r="5" fill="black"></circle>
+                            <circle v-for="(time, index) in timelineData" :cx="generateCircles()" cy="100" r="5" fill="black"></circle>
                         </svg>
-                        <div class="card card-over" style="width: 18rem; position:absolute; z-index:15;" v-for="(time, index) in timelineData">
+
+                        <!-- generated cards from json -->
+                        <div class="card card-over d-none" style="width: 18rem; position:relative; z-index:15;" v-for="(time, index) in timelineData">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     <!-- timeline date -->

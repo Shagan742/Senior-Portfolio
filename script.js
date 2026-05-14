@@ -17,7 +17,18 @@ const vue_app = Vue.createApp({
         }
     },
     methods: {
-        
+        generateCircles() {
+            for(int i=0; i<2; i++) {
+                generateCircleX(/* changing currentPosition */);
+            }
+        }
+    },
+    computed: {
+        generateCircleX(start) {
+            let n=start;
+            let lineLength=900;
+            return n+(lineLength/3);
+        }
     }
 })
 
