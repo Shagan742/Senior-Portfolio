@@ -1,6 +1,37 @@
 [
     {
-        "date":"September 2025",
+        "date":"September 2023",
         "description":"I officially began my journey in the Web Design Pathway Program at Marlboro High School."
+    },
+    {
+        "date":"December 2023",
+        "description":"I learned basic HTML and CSS, and made elementary websites on Replit to practice coding in those languages."
+    },
+    {
+        "date":"February 2024",
+        "description":"I learned Bootstrap and utilized it in organizing content on my website and making it responsive to different screen sizes."
+    },
+    {
+        "date":"June 2025",
+        "description":"By the end of 11th grade, I learned JavaScript fundamentals via countless tutorials and making mini websites."
+    },
+    {
+        "date":"November 2025",
+        "description":"I finished learning about JSON files, working with JQuery and then Vue, and how to create & maintain a Gantt chart."
+    },
+    {
+        "date":"January 2026",
+        "description":"With a partner, I co-created a course planning website for underclassmen at Marlboro High School to utilize for planning out their future courses."
+    },
+    {
+        "date":"March 2026",
+        "description":"I worked with my first client, my yoga teacher, on making her a website for her yoga studio."
+    }, {
+        "date":"May 2026",
+        "description":"I began working on my senior portfolio, a comprehensive website about me and my journey in the technical field."
+    },
+    {
+        "date":"June 2026",
+        "description":"I graduate Marlboro High School, continuing my technical journey at Rutgers University."
     }
 ]
