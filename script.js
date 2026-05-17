@@ -2,32 +2,47 @@ const vue_app = Vue.createApp({
     created() {
         fetch('skills.json').then(response => response.json()).then(json => {
             this.skills = json
-            console.log(this.skills)
         })
 
         fetch('timelineData.json').then(response => response.json()).then(json => {
             this.timelineData = json
-            console.log(this.timelineData)
+        })
+
+        fetch('projects.json').then(response => response.json()).then(json => {
+            this.projects = json
         })
     },
     data() {//this is the data
         return {
             skills: [],
-            timelineData: []
+            timelineData: [],
+            projects:[],
+            year:'Sophomore'
         }
     },
     methods: {
-        generateCircles() {
-            for(int i=0; i<2; i++) {
-                generateCircleX(/* changing currentPosition */);
-            }
-        }
+        // generateCircles() {
+        //     for(let i=0; i<2; i++) {
+        //         generateCircleX(/* changing currentPosition */);
+        //     }
+        // },
+        
     },
     computed: {
-        generateCircleX(start) {
-            let n=start;
-            let lineLength=900;
-            return n+(lineLength/3);
+        filterArr() {
+            return this.projects.filter(proj => proj.year===this.year)
+        },
+        // generateCircleX(start) {
+        //     let n=start;
+        //     let lineLength=900;
+        //     return n+(lineLength/3);
+        // },
+        threeCardsPerSlide() {
+            const three=[];
+            for(let i=0; i<this.filterArr.length; i+=3) {
+               three.push(this.filterArr.slice(i, i+3))
+            }
+            return three;
         }
     }
 })

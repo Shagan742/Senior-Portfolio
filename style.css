@@ -128,6 +128,23 @@ h1 {
 
 /* contact */
 
+form {
+    background-color:rgba(255, 255, 255, 0.4);
+    border:2px solid white;
+    padding:10px;
+    border-radius:6px;
+}
+
+.form-label {
+    font-size:20px;
+}
+
+.submit {
+    border:1px solid black;
+    color:black;
+    background-image:linear-gradient(60deg, #9cb99cc4, rgb(201, 230, 193), #9cb99cc4);
+}
+
 /* footer */
 h3 {
     font-family: "La Belle Aurore", cursive;

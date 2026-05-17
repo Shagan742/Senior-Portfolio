@@ -90,7 +90,7 @@
                             <path v-show="index%2===1" d="M50 300 Q-100 410 50 500" stroke="black" stroke-width="2" fill="none"></path>
 
                             <!-- the dots are generated x pixels away from each other, and each line can have a maximum of 3-4 dots -->
-                            <circle v-for="(time, index) in timelineData" :cx="generateCircles()" cy="100" r="5" fill="black"></circle>
+                            <!-- <circle v-for="(time, index) in timelineData" :cx="generateCircles()" cy="100" r="5" fill="black"></circle> -->
                         </svg>
 
                         <!-- generated cards from json -->
@@ -124,16 +124,16 @@
                     </div>
                     <div class="row d-flex justify-content-center">
                         <!--skills content-->
-                    <div class="col-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-3 m-2" v-for="skill in skills">
+                        <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     <!-- img with transparent png logos of each language/skill -->
-                                    <img src="#">
+                                    <img :src="skill.image">
                                 </h5>
                                 <p class="card-text">
                                     <!-- name of skill -->
-                                    ...
+                                    {{skill.language}}
                                 </p>
                             </div>
                         </div>
@@ -150,30 +150,32 @@
                         <!--button Soph-Jnr-Snr-->
                         <div class="col-md-6 p-4">
                             <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                <button type="button" class="btn btn-outline year">Sophomore Year</button>
-                                <button type="button" class="btn btn-outline year">Junior Year</button>
-                                <button type="button" class="btn btn-outline year">Senior Year</button>
+                                <button @click="year='Sophomore'" type="button" class="btn btn-outline year">Sophomore Year</button>
+                                <button @click="year='Junior'" type="button" class="btn btn-outline year">Junior Year</button>
+                                <button @click="year='Senior'" type="button" class="btn btn-outline year">Senior Year</button>
                             </div>
                         </div>
                         
                         <!--projects-->
                         <div class="col-12">
-                            <div id="carouselExample" class="carousel slide">
+                            <div id="carouselExample" class="carousel slide" >
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active"><!--add v-if to have .active only on slide 1-->
-                                        <div class="col-3 mx-3">
-                                            <div class="card" style="width: 18rem;">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">
-                                                        <!-- name of project -->
-                                                    </h5>
-                                                    <!-- add 'learn more' on first 3 projs per yr -->
-                                                    <a href="#" class="btn btn-outline learnMore">Learn More</a> 
+                                    <div class="carousel-item" v-for="(three, i) in threeCardsPerSlide" :key="i" :class="{ active: i === 0 }">
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col-md-3 my-5 col-sm-10 d-flex justify-content-center" v-for="(proj, projIndex) in three">
+                                                <div class="card h-100" :key="projIndex">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">
+                                                            <!-- name of project -->
+                                                            {{proj.name}}
+                                                        </h5>
+                                                        <!-- add 'learn more' on first 3 projs per yr -->
+                                                        <a :href="proj.link" class="btn btn-outline learnMore">Learn More</a> 
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
@@ -182,9 +184,9 @@
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
+                                </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </section>
@@ -194,7 +196,7 @@
                     <div class="row mb-3">
                         <h1>Contact Me!</h1>
                     </div>
-                    <div class="row">
+                    <div class="row d-flex justify-content-center align-items-center">
                         <!--contact content-->
                         <div class="col-md-6">
                             <p>Feel free to reach out to me!</p>
@@ -203,6 +205,19 @@
                         </div>
                         <div class="col-md-6">
                             <!-- formspree -->
+                            <form action="https://formspree.io/f/xpqnagoa" method="POST">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3 text-center">
+                                    <button style="font-size:18px;" class="btn submit" type="submit">Submit</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
