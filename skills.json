@@ -1,26 +1,34 @@
 [
     {
         "language":"HTML",
-        "image": ""
+        "image": "imgs/html.png"
     },
     {
         "language":"CSS",
-        "image": ""
+        "image": "imgs/css.png"
     },
     {
         "language":"JavaScript",
-        "image": ""
+        "image": "imgs/js.png"
     },
     {
         "language":"Vue.js",
-        "image": ""
+        "image": "imgs/vue.png"
     },
     {
         "language":"Java",
-        "image": ""
+        "image": "imgs/java.png"
     },
     {
         "language":"Github",
-        "image": ""
+        "image": "imgs/github.png"
+    },
+    {
+        "language":"Figma",
+        "image": "imgs/figma.png"
+    },
+    {
+        "language":"JQuery",
+        "image": "imgs/jquery.png"
     }
 ]
