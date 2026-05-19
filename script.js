@@ -65,11 +65,6 @@ const vue_app = Vue.createApp({
         filterArr() {
             return this.projects.filter(proj => proj.year===this.year)
         },
-        // generateCircleX(start) {
-        //     let n=start;
-        //     let lineLength=900;
-        //     return n+(lineLength/3);
-        // },
         threeCardsPerSlide() {
             const three=[];
             for(let i=0; i<this.filterArr.length; i+=3) {
@@ -83,6 +78,15 @@ const vue_app = Vue.createApp({
                threeDatas.push(this.timelineData.slice(i, i+3))
             }
             return threeDatas;
+        },
+        calcViewBoxHeight() {
+            let count=0;
+            for(let i=0; i<this.timelineData.length; i+=3) {     //attempts to count how many lines are made to make the height of viewbox = to last line's y-val
+                count++;
+            }
+
+            return count*200 +100;
+
         }
     }
 })

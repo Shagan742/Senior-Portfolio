@@ -79,9 +79,9 @@
                     <div class="row mb-3">
                         <h1>My Journey</h1>
                     </div>
-                    <div class="row d-none d-md-block" style="position:relative;">
+                    <div class="row d-none d-md-block justify-content-center" style="position:relative;">
                         <!--timeline-->
-                        <svg viewBox="-80 0 1200 550" class="timelineDesktop"> <!--make little box the timeline resides in-->
+                        <svg :viewBox="`0 0 1200 ${calcViewBoxHeight}`" class="timelineDesktop" :height="calcViewBoxHeight"> <!--make little box the timeline resides in, should grow with growing timeline-->
                             <!-- generate new line every 3 circles -->
                             <line v-for="(t, ind) in threeTimes" x1="50" :y1="genNewLine(ind)" x2="950" :y2="genNewLine(ind)" stroke="black" stroke-width="2"></line>
                             
