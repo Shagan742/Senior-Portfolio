@@ -30,7 +30,7 @@ const vue_app = Vue.createApp({
     },
     directives: {
     'fade-on-scroll': {
-      mounted(el) { //said element's styles are put on it to happen upon load
+      mounted(el) { //the element's styles are put on it to happen upon load
         el.style.opacity = '0';
         el.style.transform = 'translateY(40px)';
         el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
@@ -43,7 +43,7 @@ const vue_app = Vue.createApp({
           }
         }, { threshold: 0.1 }); //how much a user needs to scroll to the element's location for fade-in to occur
 
-        observer.observe(el); //observe the next element
+        observer.observe(el); //observe the next element w/ class 'fade-on-scroll'
       }
     }
   },
