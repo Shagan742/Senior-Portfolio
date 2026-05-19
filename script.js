@@ -21,11 +21,25 @@ const vue_app = Vue.createApp({
         }
     },
     methods: {
-        // generateCircles() {
-        //     for(let i=0; i<2; i++) {
-        //         generateCircleX(/* changing currentPosition */);
-        //     }
-        // },
+        generateCirclesX(locationCircle) {
+            const n=(950-50)/3;
+            let currPosition=0;
+
+            if(locationCircle%3==0) {
+                currPosition=n-100;
+            } else if(locationCircle%3==1) {
+                currPosition=(n+n)-100;
+            } else {
+                currPosition=(n+n+n)-100;
+            }
+            return currPosition;
+        },
+        generateCirclesY(locationCircle) {
+            return 100 + (Math.floor(locationCircle / 3) * 200);
+        },
+        genNewLine(locationCircle) {
+           return 100 + (locationCircle * 200);
+        }
         
     },
     directives: {
@@ -62,6 +76,13 @@ const vue_app = Vue.createApp({
                three.push(this.filterArr.slice(i, i+3))
             }
             return three;
+        },
+        threeTimes() {
+            const threeDatas=[];
+            for(let i=0; i<this.timelineData.length; i+=3) {
+               threeDatas.push(this.timelineData.slice(i, i+3))
+            }
+            return threeDatas;
         }
     }
 })

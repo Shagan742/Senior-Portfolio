@@ -83,14 +83,14 @@
                         <!--timeline-->
                         <svg viewBox="-80 0 1200 550" class="timelineDesktop"> <!--make little box the timeline resides in-->
                             <!-- generate new line every 3 circles -->
-                            <line x1="50" y1="100" x2="950" y2="100" stroke="black" stroke-width="2"></line>
+                            <line v-for="(t, ind) in threeTimes" x1="50" :y1="genNewLine(ind)" x2="950" :y2="genNewLine(ind)" stroke="black" stroke-width="2"></line>
                             
                             <!-- generate new curve every line, alternating between these 2 -->
-                            <path v-show="index%2===0" d="M950 100 Q1090 210 950 300" stroke="black" stroke-width="2" fill="none"></path>
-                            <path v-show="index%2===1" d="M50 300 Q-100 410 50 500" stroke="black" stroke-width="2" fill="none"></path>
+                            <path v-for="(t, ind) in threeTimes" v-show="ind%2===0" :d="`M950 ${100 + (ind * 200)} Q1090 ${210 + (ind * 200)} 950 ${300 + (ind * 200)}`" stroke="black" stroke-width="2" fill="none"></path>
+                            <path v-for="(t, ind) in threeTimes" v-show="ind%2===1" :d="`M50 ${100 + (ind * 200)} Q-100 ${210 + (ind * 200)} 50 ${300 + (ind * 200)}`" stroke="black" stroke-width="2" fill="none"></path>
 
                             <!-- the dots are generated x pixels away from each other, and each line can have a maximum of 3-4 dots -->
-                            <!-- <circle v-for="(time, index) in timelineData" :cx="generateCircles()" cy="100" r="5" fill="black"></circle> -->
+                            <circle v-for="(time, index) in timelineData" :cx="generateCirclesX(index)" :cy="generateCirclesY(index)" r="5" fill="black"></circle>
                         </svg>
 
                         <!-- generated cards from json -->
