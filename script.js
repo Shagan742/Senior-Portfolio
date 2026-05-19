@@ -22,7 +22,7 @@ const vue_app = Vue.createApp({
     },
     methods: {
         generateCirclesX(locationCircle) {
-            const n=(950-50)/3;
+            const n=(1050-50)/3;
             let currPosition=0;
 
             if(locationCircle%3==0) {
@@ -35,10 +35,10 @@ const vue_app = Vue.createApp({
             return currPosition;
         },
         generateCirclesY(locationCircle) {
-            return 100 + (Math.floor(locationCircle / 3) * 200);
+            return 100 + (Math.floor(locationCircle / 3) * 250);
         },
         genNewLine(locationCircle) {
-           return 100 + (locationCircle * 200);
+           return 100 + (locationCircle * 250);
         }
         
     },
@@ -85,7 +85,7 @@ const vue_app = Vue.createApp({
                 count++;
             }
 
-            return count*200 +100;
+            return count*250 +100;
 
         }
     }
