@@ -28,6 +28,25 @@ const vue_app = Vue.createApp({
         // },
         
     },
+    directives: {
+    'fade-on-scroll': {
+      mounted(el) { //said element's styles are put on it to happen upon load
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(40px)';
+        el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+
+        const observer = new IntersectionObserver(([entry]) => { //observes for user scrolling upon said element
+          if (entry.isIntersecting) {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)'; //make these styles apply if user scrolled upon element
+            observer.unobserve(el); //leave element alone after, making it not fade-in again and again
+          }
+        }, { threshold: 0.1 }); //how much a user needs to scroll to the element's location for fade-in to occur
+
+        observer.observe(el); //observe the next element
+      }
+    }
+  },
     computed: {
         filterArr() {
             return this.projects.filter(proj => proj.year===this.year)
