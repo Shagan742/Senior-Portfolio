@@ -48,7 +48,8 @@ h1 {
 /* jumbotron */
 
 .jumbotron {
-    height:600px; 
+    height:90vh; 
+    width:100vw;
     border-bottom:2px solid black;
     box-shadow: 0 8px 40px -6px black;
     background-image: url(imgs/jumbotronImage.jpg);
