@@ -22,15 +22,15 @@ const vue_app = Vue.createApp({
     },
     methods: {
         generateCirclesX(locationCircle) {
-            const n=(1050-50)/3;
+            const n=(1100-100)/3;
             let currPosition=0;
 
             if(locationCircle%3==0) {
-                currPosition=n-100;
+                currPosition=n-50;
             } else if(locationCircle%3==1) {
-                currPosition=(n+n)-100;
+                currPosition=(n+n)-50;
             } else {
-                currPosition=(n+n+n)-100;
+                currPosition=(n+n+n)-50;
             }
             return currPosition;
         },

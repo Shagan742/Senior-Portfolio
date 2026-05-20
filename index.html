@@ -74,21 +74,21 @@
                 </div>
             </section>
 
-            <section v-fade-on-scroll id="journey" class="my-5" style=" overflow-x:scroll">
+            <section v-fade-on-scroll id="journey" class="my-5">
                 <div class="container py-5">
                     <div class="row mb-3">
                         <h1>My Journey</h1>
                     </div>
-                    <div class="timeline-scroll" style="position:relative; width:1200px;">
-                        <div class="row d-none d-md-block" style="position:relative;">
+                    <div class="timeline-scroll">
+                        <div class="timeline-track d-none d-md-block">
                             <!--timeline-->
-                            <svg :viewBox="`-120 0 1320 ${calcViewBoxHeight}`" class="timelineDesktop" :height="calcViewBoxHeight" style="width:1200px;"> <!--make little box the timeline resides in, should grow with growing timeline-->
+                            <svg :viewBox="`0 0 1200 ${calcViewBoxHeight}`" class="timelineDesktop" :height="calcViewBoxHeight" style="display:block; margin:0 auto;"> <!--make little box the timeline resides in, should grow with growing timeline-->
                                 <!-- generate new line every 3 circles -->
-                                <line v-for="(t, ind) in threeTimes" x1="60" :y1="genNewLine(ind)" x2="1050" :y2="genNewLine(ind)" stroke="black" stroke-width="2"></line>
+                                <line v-for="(t, ind) in threeTimes" x1="90" :y1="genNewLine(ind)" x2="1130" :y2="genNewLine(ind)" stroke="black" stroke-width="2"></line>
                                 
                                 <!-- generate new curve every line, alternating between these 2 -->
-                                <path v-for="(t, ind) in threeTimes" v-show="ind%2===0" :d="`M1050 ${100 + (ind * 250)} Q1150 ${240 + (ind * 250)} 1050 ${350 + (ind * 250)}`" stroke="black" stroke-width="2" fill="none"></path>
-                                <path v-for="(t, ind) in threeTimes" v-show="ind%2===1" :d="`M60 ${100 + (ind * 250)} Q-50 ${240 + (ind * 250)} 60 ${350 + (ind * 250)}`" stroke="black" stroke-width="2" fill="none"></path>
+                                <path v-for="(t, ind) in threeTimes" v-show="ind%2===0" :d="`M1130 ${100 + (ind * 250)} Q1240 ${240 + (ind * 250)} 1130 ${350 + (ind * 250)}`" stroke="black" stroke-width="2" fill="none"></path>
+                                <path v-for="(t, ind) in threeTimes" v-show="ind%2===1" :d="`M90 ${100 + (ind * 250)} Q0 ${240 + (ind * 250)} 90 ${350 + (ind * 250)}`" stroke="black" stroke-width="2" fill="none"></path>
 
                                 <!-- the dots are generated x pixels away from each other, and each line can have a maximum of 3-4 dots -->
                                 <circle v-for="(time, index) in timelineData" :cx="generateCirclesX(index)" :cy="generateCirclesY(index)" r="5" fill="black"></circle>
@@ -113,7 +113,7 @@
 
                     <div class="row d-md-none d-flex justify-content-center">
                         <!--timeline for mobile-->
-                        <svg viewbox="0 0 500 1000"> <!--make little box the timeline resides in-->
+                        <svg viewBox="0 0 500 1000"> <!--make little box the timeline resides in-->
                             <line x1="50" y1="50" x2="50" y2="950" stroke="black" stroke-width="2"></line>
                         </svg>
                     </div>
