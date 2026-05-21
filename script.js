@@ -39,8 +39,13 @@ const vue_app = Vue.createApp({
         },
         genNewLine(locationCircle) {
            return 100 + (locationCircle * 250);
-        }
-        
+        },
+        calcLineY() {
+            return 100 + (this.timelineData.length * 250);
+        },
+        generateCirclesMobileY(locationCircle) {
+            return 200 + (locationCircle * 250);
+        }       
     },
     directives: {
     'fade-on-scroll': {
@@ -87,6 +92,9 @@ const vue_app = Vue.createApp({
 
             return count*250 +100;
 
+        },
+        calcVBHeightMobile() {
+            return 100 + (this.timelineData.length * 250);
         }
     }
 })
