@@ -128,6 +128,7 @@ h2.display-1 {
     width:max-content;
     min-width: 1200px;
     position: relative;
+    
 }
 
 .card-over {
@@ -137,6 +138,35 @@ h2.display-1 {
     transform: translate(-50%, -50%);
     overflow-y:auto;
     height:150px;
+}
+
+.card-over::-webkit-scrollbar {
+  width: 3px;               /* width of scrollbar */
+}
+
+.card-over::-webkit-scrollbar-track {
+  background: transparent;  /*     track background */
+  border-radius: 4px;
+}
+
+.card-over::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#428342c4, rgb(165, 196, 156), #428342c4);          /* scrollbar handle color */
+  border-radius: 40px;
+}
+
+.timeline-scroll::-webkit-scrollbar {
+  width: 1px;               /* width of scrollbar */
+}
+
+.timeline-scroll::-webkit-scrollbar-track {
+  background: transparent;  /*     track background */
+  padding:1px;
+  border-radius: 4px;
+}
+
+.timeline-scroll::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#428342c4, rgb(165, 196, 156), #428342c4);          /* scrollbar handle color */
+  border-radius: 40px;
 }
 
 /* skills */
