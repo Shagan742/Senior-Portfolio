@@ -183,6 +183,15 @@ h2.display-1 {
     height:220px;
 }
 
+.project .card-title {
+    color:white;
+    font-size:25px;
+}
+
+.project .card-body {
+    backdrop-filter: brightness(0.4) blur(1px);
+}
+
 .learnMore {
     border:1px solid black;
     color:black;
