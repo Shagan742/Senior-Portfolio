@@ -188,16 +188,15 @@
                                     <div class="carousel-item" v-for="(three, i) in threeCardsPerSlide" :key="i" :class="{ active: i === 0 }">
                                         <div class="row d-flex justify-content-center align-items-center">
                                             <div class="col-md-3 my-5 col-sm-10" v-for="(proj, projIndex) in three">
-                                                <div class="card project" :key="projIndex">
-                                                    <div class="card-body">
+                                                <div class="card project h-100" :key="projIndex" :style="{'background-image': `url(${proj.bg})`}">
+                                                    <div class="card-body d-flex flex-column justify-content-center">
                                                         <h5 class="card-title">
                                                             <!-- name of project -->
                                                             {{proj.name}}
                                                         </h5>
                                                         <!-- add 'learn more' on first 3 projs per yr -->
-                                                        <a target="_blank" v-show="proj.learnMore===true" :key="proj.learnMore" href="project.html" class="btn btn-outline learnMore mb-3">Learn More</a> 
-                                                        <br>
-                                                        <a target="_blank" :href="proj.visitWebsite" class="btn btn-outline learnMore mb-3">Visit Website</a>
+                                                        <a target="_blank" v-show="proj.learnMore===true" :key="proj.learnMore" href="project.html" class="btn btn-outline learnMore w-100">Learn More</a> 
+                                                        <a target="_blank" :href="proj.visitWebsite" class="btn btn-outline learnMore w-100">Visit Website</a>
                                                     </div>
                                                 </div>
                                             </div>

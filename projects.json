@@ -1,134 +1,148 @@
 [
     {
         "name":"Global Cancer Disparities Initiative Website",
-        "bg":"s",
+        "bg":"imgs/globalCancer.png",
         "visitWebsite":"https://codehs.com/sandbox/id/globalcancershagansangha-tDsTcV?authuser=0",
         "year":"Sophomore",
         "learnMore":false
     },
     {
         "name":"Karen Coffee Shop Website",
-        "bg":"s",
+        "bg":"imgs/KarenCafe.png",
         "visitWebsite":"https://codehs.com/sandbox/id/theexquisitecoffeehousekt-W0N9Uc?collaborate=-NwGRegQAx4KGnvpIL1e&filepath=contact.css",
         "year":"Sophomore",
         "learnMore":false
     },
     {
         "name":"Vacation Destination Website - Dubai",
-        "bg":"s",
+        "bg":"imgs/DubaiSite.png",
         "visitWebsite":"https://codehs.com/sandbox/id/vacationdestshagansangha-t0Aw4S",
         "year":"Sophomore",
         "learnMore":false
     },
     {
         "name":"Farmer's Market Website",
-        "bg":"s",
+        "bg":"imgs/FarmerMarket.png",
         "visitWebsite":"https://codehs.com/sandbox/id/shagansanghafarmersmarket-JOHW5N?filepath=style.css",
         "year":"Sophomore",
         "learnMore":false
     },
     {
         "name":"Designer Tribute Website - IKEA",
-        "bg":"s",
+        "bg":"imgs/ikeaSite.png",
         "visitWebsite":"https://codehs.com/sandbox/id/shagansanghadesignertrib-OD4HpO?filepath=CurrDesign.html",
         "year":"Sophomore",
         "learnMore":false
     },
     {
         "name":"Summer-tainment Website",
-        "bg":"s",
-        "visitWebsite":"https://github.com/Shagan742/Summer-tainment-site",
+        "bg":"imgs/summertainmentCostco.png",
+        "visitWebsite":"https://shagan742.github.io/Summer-tainment-site/",
         "year":"Junior",
         "learnMore":false
     },
     {
         "name":"About Famous Person Website - Queen Mary I",
-        "bg":"s",
-        "visitWebsite":"https://github.com/Shagan742/About-Famous-Person-Site",
+        "bg":"imgs/queenMary.png",
+        "visitWebsite":"https://shagan742.github.io/About-Famous-Person-Site/",
         "year":"Junior",
         "learnMore":false
     },
     {
         "name":"Word Salad",
-        "bg":"s",
-        "visitWebsite":"https://github.com/Shagan742/World-Salad",
+        "bg":"imgs/madlib.png",
+        "visitWebsite":"https://shagan742.github.io/World-Salad/",
         "year":"Junior",
         "learnMore":false
     },
     {
         "name":"Magic 8 Ball Website",
-        "bg":"s",
-        "visitWebsite":"https://github.com/Shagan742/magic8ball-project",
+        "bg":"imgs/magic8ball.png",
+        "visitWebsite":"https://shagan742.github.io/magic8ball-project/",
         "year":"Junior",
         "learnMore":false
     },
     {
         "name":"Name Generator Website",
-        "bg":"s",
-        "visitWebsite":"https://github.com/Shagan742/name-generator",
+        "bg":"imgs/nameGenerator.png",
+        "visitWebsite":"https://shagan742.github.io/name-generator/",
         "year":"Junior",
         "learnMore":false
     },
     {
         "name":"Rock-Paper-Scissors Website",
-        "bg":"s",
-        "visitWebsite":"https://github.com/Shagan742/Rock-Paper-Scissors",
+        "bg":"imgs/RPS.png",
+        "visitWebsite":"https://shagan742.github.io/Rock-Paper-Scissors/",
         "year":"Junior",
         "learnMore":false
     },
     {
         "name":"Presidential Biography Website - James Monroe",
-        "bg":"s",
-        "visitWebsite":"https://github.com/Shagan742/presidential-biography-james-monroe",
+        "bg":"imgs/jamesMonroe.png",
+        "visitWebsite":"https://shagan742.github.io/presidential-biography-james-monroe/",
         "year":"Junior",
         "learnMore":false
     },
     {
         "name":"To-Do List Website",
-        "bg":"s",
-        "visitWebsite":"https://github.com/Shagan742/To-Do-List",
+        "bg":"imgs/toDoList.png",
+        "visitWebsite":"https://shagan742.github.io/To-Do-List/",
         "year":"Junior",
         "learnMore":false
     },
     {
         "name":"Hangman Website",
-        "bg":"s",
-        "visitWebsite":"https://github.com/Shagan742/hangman",
+        "bg":"imgs/hangman.png",
+        "visitWebsite":"https://shagan742.github.io/hangman/",
         "year":"Junior",
         "learnMore":false
     },
     {
         "name":"Serenescope Article Gallery",
-        "bg":"s",
-        "visitWebsite":"https://github.com/Shagan742/serenescope-article-gallery",
+        "bg":"imgs/articleGallery.png",
+        "visitWebsite":"https://shagan742.github.io/serenescope-article-gallery/",
         "year":"Junior",
         "learnMore":false
     },
     {
         "name":"Team Players Website - Blair Witch Project",
-        "bg":"s",
-        "visitWebsite":"https://github.com/Shagan742/team-players-site",
+        "bg":"imgs/teamPlayers.png",
+        "visitWebsite":"https://shagan742.github.io/team-players-site/",
         "year":"Junior",
         "learnMore":false
     },
     {
         "name":"Little Bird Toy Company Website",
-        "bg":"s",
-        "visitWebsite":"https://github.com/Shagan742/birdToyCompanyWebsite",
+        "bg":"imgs/LBTC.png",
+        "visitWebsite":"https://shagan742.github.io/birdToyCompanyWebsite/",
         "year":"Junior",
         "learnMore":false
     },
     {
-        "name":"akak",
-        "bg":"s",
-        "visitWebsite":"a",
+        "name":"College Recruitment Website",
+        "bg":"imgs/collegeRecruitment.png",
+        "visitWebsite":"https://shagan742.github.io/CollegeRecruitmentSite/",
         "year":"Senior",
         "learnMore":false
     },
     {
-        "name":"akak",
-        "bg":"s",
-        "visitWebsite":"a",
+        "name":"Secret Santa Gift Selector Website",
+        "bg":"imgs/holidaySite.png",
+        "visitWebsite":"https://shagan742.github.io/holidaySite/",
+        "year":"Senior",
+        "learnMore":false
+    },
+    {
+        "name":"Course Planner Website",
+        "bg":"imgs/coursePlanner.png",
+        "visitWebsite":"https://shagan742.github.io/CoursePlanner/",
+        "year":"Senior",
+        "learnMore":false
+    },
+    {
+        "name":"Inner Light Pathways Website",
+        "bg":"imgs/ILP.png",
+        "visitWebsite":"https://reikiyogasound.com/",
         "year":"Senior",
         "learnMore":false
     }
