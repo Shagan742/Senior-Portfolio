@@ -46,7 +46,8 @@
                 </div>
             </nav>
         </header>
-        <main class="text-center" id="app">
+    <div id="app">
+        <main class="text-center" :aria-hidden="modalOpen">
             
                 <div class="jumbotron jumbotron-fluid my-5">
                     <div class="row row-jumbotron h-100 d-flex justify-content-center align-items-center">
@@ -195,7 +196,7 @@
                                                             {{proj.name}}
                                                         </h5>
                                                         <!-- add 'learn more' on first 3 projs per yr -->
-                                                        <a target="_blank" v-show="proj.learnMore===true" :key="proj.learnMore" href="project.html" class="btn btn-outline learnMore w-100">Learn More</a> 
+                                                        <a target="_blank" v-show="proj.learnMore===true" :key="proj.learnMore" @click="selectedProj(proj)" class="btn btn-outline learnMore w-100" data-bs-toggle="modal" data-bs-target="#staticBackdropLabel">Learn More</a> 
                                                         <a target="_blank" :href="proj.visitWebsite" class="btn btn-outline learnMore w-100">Visit Website</a>
                                                     </div>
                                                 </div>
@@ -215,7 +216,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
+        </section>
+
 
             <section v-fade-on-scroll id="contact" class="my-5">
                 <div class="container py-5">
@@ -249,6 +251,38 @@
                 </div>
             </section>
         </main>
+
+        <!-- Modal -->
+            <div class="modal fade" id="staticBackdropLabel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 95vw; width: 95vw; max-height:92vh; height:92vh;">
+                    <div class="modal-content" style="height: 100%;">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">{{currProj.name}}</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @click="modalOpen='false'"></button>
+                        </div>
+                        <div class="modal-body" style="overflow-x: hidden;">
+                            <div class="jumbotron jumbotron-fluid my-5">
+                                <div class="row row-jumbotron h-100 d-flex justify-content-center align-items-center">
+                                    <h1 class="display-1 d-md-block d-none">Shagan Sangha</h1>
+                                    <h2 class="display-1 d-md-none d-block">Shagan Sangha</h2>
+                                    <!-- img of down-pointing arrow here -->
+                                    <svg viewBox="0 0 40 20" width="20" height="20" class="downArrow fixed-bottom m-auto mb-5">
+                                        <line x1="0" y1="0" x2="20" y2="20" stroke="white" stroke-width="2"></line>
+                                        <line x1="40" y1="0" x2="20" y2="20" stroke="white" stroke-width="2"></line>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn learnMore" data-bs-dismiss="modal" @click="modalOpen=false">Close</button>
+                             <a target="_blank" :href="currProj.visitWebsite" class="btn learnMore">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
         <footer>
             <!-- place footer here -->
              <div id="footer" class="text-center py-3">

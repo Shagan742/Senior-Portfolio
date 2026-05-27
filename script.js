@@ -17,7 +17,9 @@ const vue_app = Vue.createApp({
             skills: [],
             timelineData: [],
             projects:[],
-            year:'Sophomore'
+            year:'Sophomore',
+            currProj:'',
+            modalOpen:false
         }
     },
     methods: {
@@ -45,7 +47,11 @@ const vue_app = Vue.createApp({
         },
         generateCirclesMobileY(locationCircle) {
             return 200 + (locationCircle * 250);
-        }       
+        },
+        selectedProj(proj) { 
+            this.currProj = proj;
+            this.modalOpen=true;
+        }
     },
     directives: {
     'fade-on-scroll': {

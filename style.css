@@ -229,6 +229,27 @@ h2.display-1 {
 
 /* blog about projects */
 
+.modal-content {
+     background-color:#E0A7B4;
+     color:black;
+}
+
+.modal {
+    backdrop-filter: blur(5px) brightness(0.8);
+}
+
+main[aria-hidden="true"] {
+    pointer-events: none;
+    user-select: none;
+}
+
+html:has(main[aria-hidden="true"]),
+body:has(main[aria-hidden="true"]) {       /*check if main, inside of html and body, has aria-hidden true*/
+  overflow: hidden !important;
+  height: 100% !important;
+  touch-action: none;
+}
+
 /* contact */
 
 form {
