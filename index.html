@@ -262,20 +262,12 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @click="modalOpen='false'"></button>
                         </div>
                         <div class="modal-body" style="overflow-x: hidden;">
-                            <div class="jumbotron jumbotron-fluid my-5">
-                                <div class="row row-jumbotron h-100 d-flex justify-content-center align-items-center">
-                                    <h1 class="display-1 d-md-block d-none">Shagan Sangha</h1>
-                                    <h2 class="display-1 d-md-none d-block">Shagan Sangha</h2>
-                                    <!-- img of down-pointing arrow here -->
-                                    <svg viewBox="0 0 40 20" width="20" height="20" class="downArrow fixed-bottom m-auto mb-5">
-                                        <line x1="0" y1="0" x2="20" y2="20" stroke="white" stroke-width="2"></line>
-                                        <line x1="40" y1="0" x2="20" y2="20" stroke="white" stroke-width="2"></line>
-                                    </svg>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <!-- add info abt proj such as code used, etc. -->
                                 </div>
                             </div>
-                        </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn learnMore" data-bs-dismiss="modal" @click="modalOpen=false">Close</button>
                              <a target="_blank" :href="currProj.visitWebsite" class="btn learnMore">Visit Website</a>
                         </div>
                     </div>
