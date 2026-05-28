@@ -177,9 +177,9 @@
                         <!--button Soph-Jnr-Snr-->
                         <div class="col-md-6 p-4">
                             <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                <button @click="year='Sophomore'" type="button" class="btn btn-outline year">Sophomore Year</button>
-                                <button @click="year='Junior'" type="button" class="btn btn-outline year">Junior Year</button>
-                                <button @click="year='Senior'" type="button" class="btn btn-outline year">Senior Year</button>
+                                <button @click="year='Sophomore'" :class="{active: year==='Sophomore'}" type="button" class="btn btn-outline year">Sophomore Year</button>
+                                <button @click="year='Junior'" :class="{active: year==='Junior'}" type="button" class="btn btn-outline year">Junior Year</button>
+                                <button @click="year='Senior'" :class="{active: year==='Senior'}" type="button" class="btn btn-outline year">Senior Year</button>
                             </div>
                         </div>
                         

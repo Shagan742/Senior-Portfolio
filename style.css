@@ -191,6 +191,16 @@ h2.display-1 {
     height:300px;
 }
 
+.btn-group .active {
+    background-color: #415F48;
+    color:white;
+}
+
+.btn-group .button:hover {
+    background-color: #415F48;
+    color:white;
+}
+
 .project .card-title {
     color:white;
     font-size:25px;
