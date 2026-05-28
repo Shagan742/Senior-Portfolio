@@ -19,7 +19,7 @@ const vue_app = Vue.createApp({
             projects:[],
             year:'Sophomore',
             currProj:'',
-            modalOpen:false
+            currSection:'Home'
         }
     },
     methods: {
@@ -50,7 +50,9 @@ const vue_app = Vue.createApp({
         },
         selectedProj(proj) { 
             this.currProj = proj;
-            this.modalOpen=true;
+        },
+        changeSection(section) {
+            this.currSection=section;
         }
     },
     directives: {

@@ -37,15 +37,24 @@ p {
 
 /* navbar */
 .navbar {
-    background-color:#8FB38F;
+    background-color:#415f48;
     width:100%;
     max-width:100%;
+    --bs-navbar-active-color: rgb(253, 217, 140) !important;
+} 
+
+.navbar a {
+    color:white;
+}
+
+.navbar-nav a:hover {
+    transform:matrix(1.05, 0, 0, 1.05, 0, 0);
+    color:white;
 }
 
 .navbar-nav {
   min-width: 0;
 }
-
 
 .resume {
     border-radius:500px;
@@ -61,7 +70,6 @@ p {
     border:2px solid white;
     color:white;
 }
-
 /* jumbotron */
 
 .jumbotron {
@@ -151,7 +159,7 @@ h2.display-1 {
 }
 
 .card-over::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(#428342c4, rgb(165, 196, 156), #428342c4);          /* scrollbar handle color */
+  background-image: linear-gradient(#415F48, rgb(139, 165, 132), #415F48);          /* scrollbar handle color */
   border-radius: 40px;
 }
 
@@ -166,7 +174,7 @@ h2.display-1 {
 }
 
 .timeline-scroll::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(90deg, #428342c4, rgb(165, 196, 156), #428342c4);          /* scrollbar handle color */
+  background-image: linear-gradient(90deg, #415F48, rgb(139, 165, 132), #415F48);          /* scrollbar handle color */
   border-radius: 40px;
 }
 
@@ -180,7 +188,7 @@ h2.display-1 {
 }
 
 .project {
-    height:220px;
+    height:300px;
 }
 
 .project .card-title {
@@ -193,17 +201,17 @@ h2.display-1 {
 }
 
 .learnMore {
-    border:1px solid black;
-    color:black;
-    background-image:linear-gradient(60deg, #9cb99cc4, rgb(201, 230, 193), #9cb99cc4);
+    border:1px solid white;
+    color:white;
+    background-image:linear-gradient(60deg, #415F48, rgb(139, 165, 132), #415F48);
 }
 
 .learnMore:hover {
-    border:1px solid black;
-    color:black;
-    background-image:linear-gradient(60deg, #9cb99cc4, rgb(201, 230, 193), #9cb99cc4);
-    color:white;
+    transform:matrix(1.05, 0, 0, 1.05, 0, 0);
     border:1px solid white;
+    color:white;
+    animation-duration:0.3s;
+    background-image:linear-gradient(60deg, #415F48, rgb(139, 165, 132), #415F48);
 }
 
 .year {
@@ -238,18 +246,6 @@ h2.display-1 {
     backdrop-filter: blur(5px) brightness(0.8);
 }
 
-main[aria-hidden="true"] {
-    pointer-events: none;
-    user-select: none;
-}
-
-html:has(main[aria-hidden="true"]),
-body:has(main[aria-hidden="true"]) {       /*check if main, inside of html and body, has aria-hidden true*/
-  overflow: hidden !important;
-  height: 100% !important;
-  touch-action: none;
-}
-
 /* contact */
 
 form {
@@ -264,9 +260,16 @@ form {
 }
 
 .submit {
-    border:1px solid black;
-    color:black;
-    background-image:linear-gradient(60deg, #9cb99cc4, rgb(201, 230, 193), #9cb99cc4);
+    border:1px solid white;
+    color:white;
+    background-image:linear-gradient(60deg, #415F48, rgb(139, 165, 132), #415F48);
+}
+
+.submit:hover {
+    transform:matrix(1.05, 0, 0, 1.05, 0, 0);
+    border:1px solid white;
+    color:white;
+    animation-duration:0.3s;
 }
 
 /* footer */
@@ -279,7 +282,8 @@ h3 {
 
 #footer {
     margin-top:200px;
-    background-color:#8FB38F;
-    box-shadow:0px -50px 50px 50px #8FB38F;
+    background-color:#415F48;
+    box-shadow:0px -50px 50px 50px #415F48;
     padding:20px;
+    color:white;
 }
