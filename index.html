@@ -262,9 +262,48 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @click="modalOpen='false'"></button>
                         </div>
                         <div class="modal-body" style="overflow-x: hidden;">
-                            <div class="container-fluid">
-                                <div class="row">
+                            <div class="container-fluid text-center m-3">
+                                <div class="row d-flex justify-content-center align-items-center my-5">
                                     <!-- add info abt proj such as code used, etc. -->
+                                     <h2 class="my-3">About</h2>
+                                     <div class="col-md-8 col-sm-10 my-5">
+                                        <p>{{currProj.about}}</p>
+                                     </div>
+                                </div>
+                                <div class="row d-flex justify-content-center my-5">
+                                    <!-- add info abt proj such as code used, etc. -->
+                                     <h2 class="m-3">A Walk Through My Code</h2>
+                                    <div class="col-md-6 col-sm-10 my-5">
+                                        <img v-if="currProj.imgs" :src="currProj.imgs[0]" alt="A Picture of Code" >
+                                     </div> 
+                                    <div class="col-md-6 col-sm-10 my-5">
+                                        <p>{{currProj.para1}}</p>
+                                     </div>
+
+                                    <div class="col-md-6 col-sm-10 my-5">
+                                        <p>{{currProj.para2}}</p>
+                                     </div>
+                                     <div class="col-md-6 col-sm-10 my-5">
+                                        <img v-if="currProj.imgs" :src="currProj.imgs[1]" alt="A Picture of Code">
+                                     </div>
+
+                                     <div class="col-md-6 col-sm-10 my-5">
+                                        <img v-if="currProj.imgs" :src="currProj.imgs[2]" alt="A Picture of Code">
+                                     </div> 
+                                    <div class="col-md-6 col-sm-10 my-5">
+                                        <p>{{currProj.para3}}</p>
+                                     </div>
+                                     
+                                </div>
+                                <div class="row d-flex justify-content-center my-5">
+                                    <!-- add info abt proj such as code used, etc. -->
+                                     <h2 class="m-3">Reflection</h2>
+                                    <div class="col-md-6 col-sm-10 my-5">
+                                        <p>{{currProj.reflection}}</p>
+                                     </div>
+                                     <div class="col-md-6 col-sm-10 my-5">
+                                        <img :src="currProj.bg" alt="#">
+                                     </div>
                                 </div>
                             </div>
                         <div class="modal-footer">

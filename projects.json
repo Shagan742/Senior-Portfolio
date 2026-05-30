@@ -1,149 +1,275 @@
 [
     {
-        "name":"Global Cancer Disparities Initiative Website",
-        "bg":"imgs/globalCancer.png",
-        "visitWebsite":"https://codehs.com/sandbox/id/globalcancershagansangha-tDsTcV?authuser=0",
+        "name":"Designer Tribute Website - IKEA",
+        "bg":"imgs/ikeaSite.png",
+        "visitWebsite":"https://shagansanghadesignertrib-9039211.codehs.me/index.html",
         "year":"Sophomore",
-        "learnMore":true
+        "learnMore":true,
+        "about":"As one of our many assignments of sophomore year's web design class, we were to create a designer tribute for an important person we look up to most. Being one who loves IKEA, walking around each and every one of its corridors simply for the sake of it, I decided to make a tribute for the creator of IKEA.",
+        "para1":"Knowing the basics of Bootstrap and effectively applying it to our website was essential. Of course, adding a navbar to my website was a must. From getbootstrap.com, I incorporated a responsive navbar, allowing the user to navigate to other pages of my tribute website. I even utilized the dropdown menu, adding some details about IKEA; after all, nobody deserves to miss out on some IKEA food.",
+        "para2":"Primarily using assets from getbootstrap.com, I utilized carousels to add some style to my website. This piece of code was merely copy-and-paste just like the navbar, but I still learned its mechanics over time due to enough familiarity with incorporating them into my website and adding my own data into it.",
+        "para3":"Speaking of carousels, I came up with the idea of putting carousels inside of bootstrap cards. At the time, I thought of such an idea to be a unique twist on another one of my ideas where I put cards inside of carousels, forgetting the fact that shopping websites had both ideas since forever. Nevertheless, I incorporated it into the 'current designs' page. One confusing part of having multiple carousels in one page was to figure out how to get each carousel to slide to the next slide without other carousels simultaneously doing the same. Eventually, I figured it out; I simply had to give each carousel a different ID!",
+        "reflection":"Overall, creating the website was a fun process. I would say, though, that some parts were pretty tedious. From researching Ingvar Kamprad, hard-coding each carousel, and manually creating multiple of the same element, I may have grown exhausted from using Ctrl+C and Ctrl+V millions of times, but I still grew exposure to advanced mechanics of code via Bootstrap and learned from it. Looking back at this website, I could definitely have created it faster with the knowledge I have now: Vue, JSON files, etc. However, I created a great website just as well without that knowledge.",
+        "imgs":["imgs/navbarCode.png", "imgs/carouselCode.png", "imgs/carouselInCardCode.png"]
     },
     {
         "name":"Karen Coffee Shop Website",
         "bg":"imgs/KarenCafe.png",
-        "visitWebsite":"https://codehs.com/sandbox/id/theexquisitecoffeehousekt-W0N9Uc?collaborate=-NwGRegQAx4KGnvpIL1e&filepath=contact.css",
+        "visitWebsite":"https://theexquisitecoffeehousekt-9954991.codehs.me/index.html",
         "year":"Sophomore",
-        "learnMore":false
+        "learnMore":true,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
     },
     {
         "name":"Vacation Destination Website - Dubai",
         "bg":"imgs/DubaiSite.png",
-        "visitWebsite":"https://codehs.com/sandbox/id/vacationdestshagansangha-t0Aw4S",
+        "visitWebsite":"https://vacationdestshagansangha-9428400.codehs.me/index.html",
         "year":"Sophomore",
-        "learnMore":false
+        "learnMore":true,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
     },
     {
         "name":"Farmer's Market Website",
         "bg":"imgs/FarmerMarket.png",
-        "visitWebsite":"https://codehs.com/sandbox/id/shagansanghafarmersmarket-JOHW5N?filepath=style.css",
+        "visitWebsite":"https://shagansanghafarmersmarket-9236815.codehs.me/index.html",
         "year":"Sophomore",
-        "learnMore":false
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
     },
     {
-        "name":"Designer Tribute Website - IKEA",
-        "bg":"imgs/ikeaSite.png",
-        "visitWebsite":"https://codehs.com/sandbox/id/shagansanghadesignertrib-OD4HpO?filepath=CurrDesign.html",
+        "name":"Global Cancer Disparities Initiative Website",
+        "bg":"imgs/globalCancer.png",
+        "visitWebsite":"https://globalcancershagansangha-10203530.codehs.me/index.html",
         "year":"Sophomore",
-        "learnMore":false
-    },
-    {
-        "name":"Summer-tainment Website",
-        "bg":"imgs/summertainmentCostco.png",
-        "visitWebsite":"https://shagan742.github.io/Summer-tainment-site/",
-        "year":"Junior",
-        "learnMore":false
-    },
-    {
-        "name":"About Famous Person Website - Queen Mary I",
-        "bg":"imgs/queenMary.png",
-        "visitWebsite":"https://shagan742.github.io/About-Famous-Person-Site/",
-        "year":"Junior",
-        "learnMore":false
-    },
-    {
-        "name":"Word Salad",
-        "bg":"imgs/madlib.png",
-        "visitWebsite":"https://shagan742.github.io/World-Salad/",
-        "year":"Junior",
-        "learnMore":false
-    },
-    {
-        "name":"Magic 8 Ball Website",
-        "bg":"imgs/magic8ball.png",
-        "visitWebsite":"https://shagan742.github.io/magic8ball-project/",
-        "year":"Junior",
-        "learnMore":false
-    },
-    {
-        "name":"Name Generator Website",
-        "bg":"imgs/nameGenerator.png",
-        "visitWebsite":"https://shagan742.github.io/name-generator/",
-        "year":"Junior",
-        "learnMore":false
-    },
-    {
-        "name":"Rock-Paper-Scissors Website",
-        "bg":"imgs/RPS.png",
-        "visitWebsite":"https://shagan742.github.io/Rock-Paper-Scissors/",
-        "year":"Junior",
-        "learnMore":false
-    },
-    {
-        "name":"Presidential Biography Website - James Monroe",
-        "bg":"imgs/jamesMonroe.png",
-        "visitWebsite":"https://shagan742.github.io/presidential-biography-james-monroe/",
-        "year":"Junior",
-        "learnMore":false
-    },
-    {
-        "name":"To-Do List Website",
-        "bg":"imgs/toDoList.png",
-        "visitWebsite":"https://shagan742.github.io/To-Do-List/",
-        "year":"Junior",
-        "learnMore":false
-    },
-    {
-        "name":"Hangman Website",
-        "bg":"imgs/hangman.png",
-        "visitWebsite":"https://shagan742.github.io/hangman/",
-        "year":"Junior",
-        "learnMore":false
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
     },
     {
         "name":"Serenescope Article Gallery",
         "bg":"imgs/articleGallery.png",
         "visitWebsite":"https://shagan742.github.io/serenescope-article-gallery/",
         "year":"Junior",
-        "learnMore":false
-    },
-    {
-        "name":"Team Players Website - Blair Witch Project",
-        "bg":"imgs/teamPlayers.png",
-        "visitWebsite":"https://shagan742.github.io/team-players-site/",
-        "year":"Junior",
-        "learnMore":false
+        "learnMore":true,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
     },
     {
         "name":"Little Bird Toy Company Website",
         "bg":"imgs/LBTC.png",
         "visitWebsite":"https://shagan742.github.io/birdToyCompanyWebsite/",
         "year":"Junior",
-        "learnMore":false
+        "learnMore":true,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
     },
     {
-        "name":"College Recruitment Website",
-        "bg":"imgs/collegeRecruitment.png",
-        "visitWebsite":"https://shagan742.github.io/CollegeRecruitmentSite/",
-        "year":"Senior",
-        "learnMore":false
+        "name":"Summer-tainment Website",
+        "bg":"imgs/summertainmentCostco.png",
+        "visitWebsite":"https://shagan742.github.io/Summer-tainment-site/",
+        "year":"Junior",
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
     },
     {
-        "name":"Secret Santa Gift Selector Website",
-        "bg":"imgs/holidaySite.png",
-        "visitWebsite":"https://shagan742.github.io/holidaySite/",
-        "year":"Senior",
-        "learnMore":false
+        "name":"About Famous Person Website - Queen Mary I",
+        "bg":"imgs/queenMary.png",
+        "visitWebsite":"https://shagan742.github.io/About-Famous-Person-Site/",
+        "year":"Junior",
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
+    },
+    {
+        "name":"Word Salad",
+        "bg":"imgs/madlib.png",
+        "visitWebsite":"https://shagan742.github.io/World-Salad/",
+        "year":"Junior",
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
+    },
+    {
+        "name":"Magic 8 Ball Website",
+        "bg":"imgs/magic8ball.png",
+        "visitWebsite":"https://shagan742.github.io/magic8ball-project/",
+        "year":"Junior",
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
+    },
+    {
+        "name":"Name Generator Website",
+        "bg":"imgs/nameGenerator.png",
+        "visitWebsite":"https://shagan742.github.io/name-generator/",
+        "year":"Junior",
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
+    },
+    {
+        "name":"Rock-Paper-Scissors Website",
+        "bg":"imgs/RPS.png",
+        "visitWebsite":"https://shagan742.github.io/Rock-Paper-Scissors/",
+        "year":"Junior",
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
+    },
+    {
+        "name":"Presidential Biography Website - James Monroe",
+        "bg":"imgs/jamesMonroe.png",
+        "visitWebsite":"https://shagan742.github.io/presidential-biography-james-monroe/",
+        "year":"Junior",
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
+    },
+    {
+        "name":"To-Do List Website",
+        "bg":"imgs/toDoList.png",
+        "visitWebsite":"https://shagan742.github.io/To-Do-List/",
+        "year":"Junior",
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
+    },
+    {
+        "name":"Hangman Website",
+        "bg":"imgs/hangman.png",
+        "visitWebsite":"https://shagan742.github.io/hangman/",
+        "year":"Junior",
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
+    },
+    {
+        "name":"Team Players Website - Blair Witch Project",
+        "bg":"imgs/teamPlayers.png",
+        "visitWebsite":"https://shagan742.github.io/team-players-site/",
+        "year":"Junior",
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
     },
     {
         "name":"Course Planner Website",
         "bg":"imgs/coursePlanner.png",
         "visitWebsite":"https://shagan742.github.io/CoursePlanner/",
         "year":"Senior",
-        "learnMore":false
+        "learnMore":true,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
     },
     {
         "name":"Inner Light Pathways Website",
         "bg":"imgs/ILP.png",
         "visitWebsite":"https://reikiyogasound.com/",
         "year":"Senior",
-        "learnMore":false
+        "learnMore":true,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
+    },
+    {
+        "name":"College Recruitment Website",
+        "bg":"imgs/collegeRecruitment.png",
+        "visitWebsite":"https://shagan742.github.io/CollegeRecruitmentSite/",
+        "year":"Senior",
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
+    },
+    {
+        "name":"Secret Santa Gift Selector Website",
+        "bg":"imgs/holidaySite.png",
+        "visitWebsite":"https://shagan742.github.io/holidaySite/",
+        "year":"Senior",
+        "learnMore":false,
+        "about":"",
+        "para1":"",
+        "para2":"",
+        "para3":"",
+        "reflection":"",
+        "imgs":[]
     }
 ]
