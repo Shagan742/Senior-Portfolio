@@ -231,6 +231,28 @@
                             <p>Feel free to reach out to me!</p>
                             <p><strong>Email:</strong> sanghashagan@gmail.com</p>
                             <p><strong>Phone:</strong> (732) 858-3334</p>
+                            <div class="row d-flex justify-content-center my-2">
+                        <div class="col-auto">
+                            <a href="#" target="_blank">
+                                <img style="width:50px; height:50px" src="imgs/linkedin.png" alt="Linkedin" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" target="_blank">
+                                <img style="width:50px; height:50px" src="imgs/instagram.png" alt="Instagram" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" target="_blank">
+                                <img style="width:50px; height:50px" src="imgs/mail.png" alt="Email" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" target="_blank">
+                                <img style="width:50px; height:50px" src="imgs/github.png" alt="Github" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
                         </div>
                         <div class="col-md-6">
                             <!-- formspree -->
@@ -266,31 +288,30 @@
                                 <div class="row d-flex justify-content-center align-items-center my-5">
                                     <!-- add info abt proj such as code used, etc. -->
                                      <h2 class="my-3">About</h2>
-                                     <div class="col-md-8 col-sm-10 my-5">
+                                     <div class="col-md-8 col-sm-10">
                                         <p>{{currProj.about}}</p>
                                      </div>
                                 </div>
                                 <div class="row d-flex justify-content-center my-5">
                                     <!-- add info abt proj such as code used, etc. -->
                                      <h2 class="m-3">A Walk Through My Code</h2>
-                                    <div class="col-md-6 col-sm-10 my-5">
+                                    <div class="col-md-6 col-sm-10 my-5 para" style="max-height:550px; overflow-y:auto; overflow-x: hidden;" v-if="currProj.para1">
                                         <img v-if="currProj.imgs" :src="currProj.imgs[0]" alt="A Picture of Code" >
                                      </div> 
-                                    <div class="col-md-6 col-sm-10 my-5">
+                                    <div class="col-md-6 col-sm-10 my-5 para" style="overflow-y:auto; max-height:500px;" v-if="currProj.para1">
                                         <p>{{currProj.para1}}</p>
                                      </div>
 
-                                    <div class="col-md-6 col-sm-10 my-5">
+                                    <div class="col-md-6 col-sm-10 my-5 para" v-if="currProj.para2">
                                         <p>{{currProj.para2}}</p>
                                      </div>
-                                     <div class="col-md-6 col-sm-10 my-5">
+                                     <div class="col-md-6 col-sm-10 my-5 para" style="max-height:550px; overflow-y:auto; overflow-x: hidden;" v-if="currProj.para2">
                                         <img v-if="currProj.imgs" :src="currProj.imgs[1]" alt="A Picture of Code">
                                      </div>
-
-                                     <div class="col-md-6 col-sm-10 my-5">
+                                     <div class="col-md-6 col-sm-10 my-5 para" style="max-height:550px; overflow-y:auto; overflow-x: hidden;" v-if="currProj.para3">
                                         <img v-if="currProj.imgs" :src="currProj.imgs[2]" alt="A Picture of Code">
                                      </div> 
-                                    <div class="col-md-6 col-sm-10 my-5">
+                                    <div class="col-md-6 col-sm-10 my-5 para" v-if="currProj.para3">
                                         <p>{{currProj.para3}}</p>
                                      </div>
                                      
@@ -322,10 +343,10 @@
                     <div class="row justify-content-center align-items-center">
                         <h3>Shagan Sangha</h3>
                         <!-- 3 logos -->
-                         <div class="row d-flex justify-content-center my-2">
+                    <div class="row d-flex justify-content-center my-2">
                         <div class="col-auto">
                             <a href="#" target="_blank">
-                                <img style="width:50px; height:50px" src="imgs/linkedin.png" alt="Facebook" class="img-fluid">
+                                <img style="width:50px; height:50px" src="imgs/linkedin.png" alt="Linkedin" class="img-fluid">
                             </a>
                         </div>
                         <div class="col-auto">
@@ -336,6 +357,11 @@
                         <div class="col-auto">
                             <a href="#" target="_blank">
                                 <img style="width:50px; height:50px" src="imgs/mail.png" alt="Email" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" target="_blank">
+                                <img style="width:50px; height:50px" src="imgs/github.png" alt="Github" class="img-fluid">
                             </a>
                         </div>
                     </div>
