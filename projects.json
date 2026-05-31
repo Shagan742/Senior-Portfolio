@@ -227,11 +227,11 @@
         "year":"Senior",
         "learnMore":true,
         "about":"Marlboro High School students have a hard time with picking the right classes that fit them, especially when planning adequate course rigor for colleges and passing graduation requirements. This especially happens between January to March. Created with a partner, this Course Planner website is meant to provide course schedule options a student might want to take based on the courses they already took, their grade, their leftover graduation requirements, and their career plans after Marlboro High School. This website is meant to be taken as inspiration/information for the next classes the student might take.",
-        "para1":"",
-        "para2":"",
-        "para3":"",
-        "reflection":"",
-        "imgs":[]
+        "para1":"Using Vue to render multiple clickable options was quite challenging. Not only that, but my school had tons of options for every subject, which meant much tedious work in creating a separate JSON file. In my JSON file, every object had a property called 'subject', in which I put the subject the course object belonged to. Making the file took several hours, but I eventually got it done. In fact, this was the longest JSON file I've ever written; around 122 total objects were manually written by me.",
+        "para2":"Moving along, my partner and I had to find a way to create the algorithm for recommending the user courses based on their picked major and current courses taken. In doing so, my partner first had to code a counter of how many courses for each subject that the user had selected. Then, we had to filter the gigantic JSON file array, finding the objects that weren't the user's already-taken courses and included the user's selected major. Then, we rendered a list of all found courses. The image here shows a glimpse of our code that returns a filtered array full of courses belonging to the subject the method header is labeled with.",
+        "para3":"Of course, I had to include a bonus feature: the favorites page! This is one of my first projects where I applied my knowledge of localStorage. To do so, I first pushed whatever the user marked as 'favorite' into a 'favorites' array. Then, I turned that array into a string using a special method called 'Stringify()', and then set it as an item in localStorage, a built-in temporary storage space. From a different JavaScript file, I accessed that item through local storage, then displayed it using classic Vue techniques.",
+        "reflection":"I found creating this website to be a fun experience, especially while working with a partner. My partner was a significant help in the creation of this planner, finding better strategies for building the logic. I primarily focused on building logic for the 'favorites' page and styling the website, and my partner primarily focused on building the logic of rendering and recommending courses. After presenting our final product to the classroom, we were met with lots of positive feedback on the style and idea of the website. One thing we could improve on was to take into account the instances where some courses our website didn't allow to have been taken together should be allowed to have been taken together. Still, my partner and I had an excellent idea that successfully came to life.",
+        "imgs":["imgs/jsonObj.png", "imgs/filteredCourseCode.png", "imgs/favoritesCode.png"]
     },
     {
         "name":"Inner Light Pathways Website",
@@ -239,12 +239,12 @@
         "visitWebsite":"https://reikiyogasound.com/",
         "year":"Senior",
         "learnMore":true,
-        "about":"",
-        "para1":"",
-        "para2":"",
+        "about":"This client project was created for my yoga teacher, who recently started her own yoga studio as of May 2025. Thinking of this project as an improved version of her old website, and something to advertise her business with, I decided to make one just for her. This website includes information about her, offered classes, pricing, and a contact form that actually sends her emails.",
+        "para1":"As any official business's website would have reviews, I thought of rendering 8 5-star reviews I found from Google as cards in a carousel, except this time I would use Vue to render them. Up to this point, I manually did so. But this time, I wanted to try it out the Vue way. At first, getting the carousel to show only 3 cards per slide was challenging. All 8 cards appeared on one slide, overlapping each other. To solve this problem, I created a function where a for-loop returned an array of 3 reviews per call of the function, and I rendered the cards for every slide through that function.",
+        "para2":"My yoga teacher's old website had accordions for the Q&A sections, and I wanted to add the same kind of feature in this new website as well. So, I filled a JSON file with questions from the old website, and used Microsoft Copilot to extract the answers from the website. Unfortunately, the AI could not actually extract the data even though the old website is public, and instead paraphrased the answers. Feeling unsatisfied, I manually had to copy and paste each answer, one by one, in the json file. Running the website, I noticed that the answers in the accordions seemed too 'bland'. To double-check, I went back to the old website and saw that she had bullet points, tables, subheadings, and bolded words. After tons of thinking, I realized that I had to manually place html elements within the 'answer' string in the json file, and make sure the string is all in one line. It definitely required some spatial reasoning. After 2-3 hours, I had finally completed the file. Then, when I ran the website, the answers in the accordions were much more similar in format to the old website's, and were less bland to look at.",
         "para3":"",
-        "reflection":"",
-        "imgs":[]
+        "reflection":"I presented the final product both to my class and to my yoga teacher. The class really liked this website, but suggested that I make the sections on the home page for 'Reiki', 'Yoga', and 'Sound' to be taller, so there is less of a white gap in the background to look at. Another area of improvement for this website would be having less words, since the purpose of a website is to provide more visual appeal than information. My yoga teacher really liked this website, which also has one of her domains added to it.",
+        "imgs":["imgs/carouselVueCode.png", "imgs/serviceQuesJSON.png"]
     },
     {
         "name":"College Recruitment Website",
