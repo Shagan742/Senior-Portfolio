@@ -37,16 +37,16 @@ const vue_app = Vue.createApp({
             return currPosition;
         },
         generateCirclesY(locationCircle) {
-            return 100 + (Math.floor(locationCircle / 3) * 250);
+            return 100 + (Math.floor(locationCircle / 3) * 250); //AI generated formula
         },
         genNewLine(locationCircle) {
-           return 100 + (locationCircle * 250);
+           return 100 + (locationCircle * 250); //AI generated formula
         },
         calcLineY() {
-            return 100 + (this.timelineData.length * 250);
+            return 100 + (this.timelineData.length * 250); //AI generated formula
         },
         generateCirclesMobileY(locationCircle) {
-            return 200 + (locationCircle * 250);
+            return 200 + (locationCircle * 250); //AI generated formula
         },
         selectedProj(proj) { 
             this.currProj = proj;
@@ -55,7 +55,7 @@ const vue_app = Vue.createApp({
             this.currSection=section;
         }
     },
-    directives: {
+    directives: { //AI generated code
     'fade-on-scroll': {
       mounted(el) { //the element's styles are put on it to happen upon load
         el.style.opacity = '0';
@@ -101,7 +101,7 @@ const vue_app = Vue.createApp({
             return count*250 +100;
 
         },
-        calcVBHeightMobile() {
+        calcVBHeightMobile() { //AI generated formula
             return 100 + (this.timelineData.length * 250);
         }
     }

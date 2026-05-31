@@ -123,7 +123,7 @@
 
                     <div class="row d-md-none d-flex justify-content-center">
                         <!--timeline for mobile-->
-                        <svg viewBox="`0 0 500 ${calcVBHeightMobile}`" :height="calcVBHeightMobile" style="display:block; margin:0 auto;"> <!--make little box the timeline resides in-->
+    <!--AI-enhanced-->  <svg viewBox="`0 0 500 ${calcVBHeightMobile}`" :height="calcVBHeightMobile" style="display:block; margin:0 auto;"> <!--make little box the timeline resides in-->
                             <line x1="50" y1="50" x2="50" :y2="calcLineY()" stroke="#415F48" stroke-width="2"></line>
                             <circle v-for="(time, index) in timelineData" cx="50" :cy="generateCirclesMobileY(index)" r="5" fill="#415F48"></circle>
                         </svg>
@@ -277,7 +277,7 @@
 
         <!-- Modal -->
             <div class="modal fade" id="staticBackdropLabel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 95vw; width: 95vw; max-height:92vh; height:92vh;">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 95vw; width: 95vw; max-height:92vh; height:92vh;">  <!--AI-generated widths/heights-->
                     <div class="modal-content" style="height: 100%;">
                         <div class="modal-header">
                             <h1 class="modal-title fs-5" id="staticBackdropLabel">{{currProj.name}}</h1>
