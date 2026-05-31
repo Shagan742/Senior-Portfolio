@@ -77,13 +77,13 @@
                             </p>
                         </div>
                         <div class="col-md-6">
-                            <img class="abtImg img-fluid" src="imgs/rutgers.png" width="550" height="400">
+                            <img v-fade-on-scroll class="abtImg img-fluid" src="imgs/rutgers.png" width="550" height="400">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section v-fade-on-scroll id="journey" class="my-5">
+            <section v-fade-on-scroll id="journey" class="my-5"> <!--AI-enhanced--> 
                 <div class="container py-5">
                     <div class="row mb-3">
                         <h1>My Journey</h1>
@@ -106,7 +106,7 @@
 
                             <!-- generated cards from json -->
                             
-                                <div v-for="(time, index) in timelineData" class="card card-over" :style="{top: generateCirclesY(index)+100 + 'px', left: generateCirclesX(index) + 'px' }">
+                                <div v-swing-on-scroll v-for="(time, index) in timelineData" class="card card-over" :style="{top: generateCirclesY(index)+100 + 'px', left: generateCirclesX(index) + 'px' }">
                                     <div class="card-body">
                                         <h5 class="card-title"  style="font-size:18px;">
                                             <!-- timeline date -->
@@ -123,7 +123,7 @@
 
                     <div class="row d-md-none d-flex justify-content-center">
                         <!--timeline for mobile-->
-    <!--AI-enhanced-->  <svg viewBox="`0 0 500 ${calcVBHeightMobile}`" :height="calcVBHeightMobile" style="display:block; margin:0 auto;"> <!--make little box the timeline resides in-->
+                        <svg viewBox="`0 0 500 ${calcVBHeightMobile}`" :height="calcVBHeightMobile" style="display:block; margin:0 auto;"> <!--make little box the timeline resides in-->
                             <line x1="50" y1="50" x2="50" :y2="calcLineY()" stroke="#415F48" stroke-width="2"></line>
                             <circle v-for="(time, index) in timelineData" cx="50" :cy="generateCirclesMobileY(index)" r="5" fill="#415F48"></circle>
                         </svg>
@@ -151,7 +151,7 @@
                     </div>
                     <div class="row d-flex justify-content-center">
                         <!--skills content-->
-                    <div class="col-md-3 col-sm-10 m-2" v-for="skill in skills">
+                    <div v-fade-on-scroll class="col-md-3 col-sm-10 m-2" v-for="skill in skills">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">
@@ -173,7 +173,7 @@
                     <div class="row mb-1">
                         <h1>My Projects</h1>
                     </div>
-                    <div class="row justify-content-center">
+                    <div v-fade-on-scroll class="row justify-content-center">
                         <!--button Soph-Jnr-Snr-->
                         <div class="col-md-6 p-4">
                             <div class="btn-group" role="group" aria-label="Basic outlined example">
@@ -184,7 +184,7 @@
                         </div>
                         
                         <!--projects-->
-                        <div class="col-12">
+                        <div v-fade-on-scroll class="col-12">
                             <div id="carouselExample" class="carousel slide" >
                                 <div class="carousel-inner">
                                     <div class="carousel-item" v-for="(three, i) in threeCardsPerSlide" :key="i" :class="{ active: i === 0 }">
@@ -225,36 +225,36 @@
                     <div class="row mb-3">
                         <h1>Contact Me!</h1>
                     </div>
-                    <div class="row d-flex justify-content-center align-items-center">
+                    <div v-fade-on-scroll class="row d-flex justify-content-center align-items-center">
                         <!--contact content-->
                         <div class="col-md-6">
                             <p>Feel free to reach out to me!</p>
                             <p><strong>Email:</strong> sanghashagan@gmail.com</p>
                             <p><strong>Phone:</strong> (732) 858-3334</p>
                             <div class="row d-flex justify-content-center my-2">
-                        <div class="col-auto">
+                        <div v-fade-on-scroll class="col-auto">
                             <a href="#" target="_blank">
                                 <img style="width:50px; height:50px" src="imgs/linkedin.png" alt="Linkedin" class="img-fluid">
                             </a>
                         </div>
-                        <div class="col-auto">
+                        <div v-fade-on-scroll class="col-auto">
                             <a href="#" target="_blank">
                                 <img style="width:50px; height:50px" src="imgs/instagram.png" alt="Instagram" class="img-fluid">
                             </a>
                         </div>
-                        <div class="col-auto">
+                        <div v-fade-on-scroll class="col-auto">
                             <a href="#" target="_blank">
                                 <img style="width:50px; height:50px" src="imgs/mail.png" alt="Email" class="img-fluid">
                             </a>
                         </div>
-                        <div class="col-auto">
+                        <div v-fade-on-scroll class="col-auto">
                             <a href="#" target="_blank">
                                 <img style="width:50px; height:50px" src="imgs/github.png" alt="Github" class="img-fluid">
                             </a>
                         </div>
                     </div>
                         </div>
-                        <div class="col-md-6">
+                        <div v-fade-on-scroll class="col-md-6">
                             <!-- formspree -->
                             <form action="https://formspree.io/f/xpqnagoa" method="POST">
                                 <div class="mb-3">

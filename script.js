@@ -66,12 +66,30 @@ const vue_app = Vue.createApp({
           if (entry.isIntersecting) {
             el.style.opacity = '1';
             el.style.transform = 'translateY(0)'; //make these styles apply if user scrolled upon element
-            observer.unobserve(el); //leave element alone after, making it not fade-in again and again
+          } else {
+            el.style.opacity = '0';
+        el.style.transform = 'translateY(40px)';
+        el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
           }
-        }, { threshold: 0.1 }); //how much a user needs to scroll to the element's location for fade-in to occur
+        }, { threshold: 0.2 }); //how much a user needs to scroll to the element's location for fade-in to occur
 
         observer.observe(el); //observe the next element w/ class 'fade-on-scroll'
       }
+    },
+    'swing-on-scroll': {
+        mounted(el) {
+            el.style.transformOrigin = 'top center'; 
+            el.style.transition = 'transform 1.6s cubic-bezier(0.25, 1, 0.5, 1)'; 
+            const observer=new IntersectionObserver(([entry]) => {
+                if(entry.isIntersecting) {
+                    el.style.animation='swingStart 1.6s linear forwards, continueSwinging 2s ease-in-out 1.6s infinite'
+                } else {
+                    el.style.animation='none'
+                }
+            }, {threshold: 0.05})
+
+            observer.observe(el);
+        }
     }
   },
     computed: {
